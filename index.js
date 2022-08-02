@@ -11,6 +11,15 @@ blueH.setAttribute('style', 'color:blue;');
 const blackDiv = document.createElement('div');
 blackDiv.setAttribute('style', 'border:1px solid black; background-color:pink;');
 
+const blackH = document.createElement('h1');
+blackH.textContent = 'Hey I am a div!';
+
+const blackP = document.createElement('p');
+blackP.textContent = 'Me Too!'
+
 content.appendChild(redP);
 content.appendChild(blueH);
 content.appendChild(blackDiv);
+
+blackDiv.appendChild(blackH);
+blackDiv.appendChild(blackP);
